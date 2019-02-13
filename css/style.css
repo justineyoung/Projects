@@ -72,16 +72,16 @@ h1 {
 .direction {
   width: 100%;
   padding: 5px 0px 5px 14px;
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #E7E7E7;
-  border-bottom: #D2D2D2 1px solid;
+  border-top: #D2D2D2 1px solid;
 }
 /* ~~~~~END DIRECTION~~~~~~ */
 .info {
   display:inline-block;
   width: 100%;
   padding: 10px 15px 10px 15px;
-  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
 }
 .info:hover{
   background-color: #eee;
