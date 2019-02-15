@@ -29,8 +29,8 @@ header{
 }
 .arrow {
   padding: 5px;
-  position: absolute;
-  left: 10px;
+  position: relative;
+  right: 7px;
 }
 form {
   width: 80%;
@@ -47,21 +47,24 @@ input[type=search] {
 }
 .burger {
   padding: 5px;
-  position: absolute;
-  right: 10px;
+  position:relative;
+  left: 7px;
 }
 .names{
   background-color: #F7EFFF;
-  display: flex;
-  justify-content:space-between;
   width: 100%;
-  border-bottom: #D2D2D2 1px solid;
+  border-top: #D2D2D2 1px solid;
   padding: 10px 15px 10px 15px;
 }
+.left {
+  width: 40px;
+}
 .namesinfo {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
+  display: inline-block;
+}
+img {
+  display: block
 }
 /* ~~~~~END HEADER STYLING~~~~~ */
 /* ~~~~BEGIN DIRECTION~~~~~ */
@@ -72,15 +75,14 @@ h1 {
 .direction {
   width: 100%;
   padding: 5px 0px 5px 14px;
-  /* display: inline-block; */
   background-color: #E7E7E7;
   border-top: #D2D2D2 1px solid;
 }
 /* ~~~~~END DIRECTION~~~~~~ */
 .info {
-  display:inline-block;
+  display:inline-table;
   width: 100%;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px 11px 15px;
   border-top: 1px solid #D2D2D2;
 }
 .info:hover{
@@ -89,29 +91,35 @@ h1 {
 h3 {
   background-color: #8C57C1;
   color: #fff;
-  padding: 3px 10px 3px 10px;
+  padding: 3px 0px;
   border-radius: 3px;
-  align-self: center;
+  width:40px;
+  text-align: center;
 }
-.column1 {
-  width: 18%;
+h3.main {
+  margin-top: 12px;
+}
+h3.outofservice {
+  margin-top: 10px;
 }
 
 .middle {
-  position: absolute;
-  left: 20%;
   float: left;
+  position:relative;
+  left: 20px;
+}
+li.main {
+  margin-top: 7px;
 }
 
-.column2 {
-  width: 82%;
-}
 h4 {
   padding-bottom: 5px;
 }
 h5 {
   color: #505050;
   font-size: 15px;
+  padding-top:2px;
+  padding-bottom: 2px;
 }
 
 h6 {
@@ -140,6 +148,10 @@ h6 {
 .out{
   background-color: #ddd;
 }
-.reroute, .outofservice{
+h4.reroute {
+  position:relative;
+  top: 4px;
+}
+section.reroute, section.outofservice{
   background-color: #FF7373;
 }
